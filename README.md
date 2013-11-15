@@ -1,11 +1,11 @@
 Mesh - router_test
 =========
 
-This script will just create a connection to an XBee configured as a router and will send characters to the network Coordinator. With a XBee coordinator properly configured, you will see the characters in a tarminal session connected to the Coordinator.
+This script will just create a connection to an XBee configured as a router and will send characters to the network Coordinator. With a XBee coordinator properly configured, you will see the characters in a terminal session connected to the Coordinator.
 
 
 ##Parts
-1 - Arduino Uno
+1 - Arduino Uno  
 2 - XBee radio - https://www.adafruit.com/products/968  
 2 - XBee Adaptor Kit - https://www.adafruit.com/products/126  
 
