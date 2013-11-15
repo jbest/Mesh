@@ -35,8 +35,8 @@ void setup()  {
 void loop()  {
   // send character via XBee to other XBee connected to Mac
   // via USB cable
-  xbee.print( c );
-  
+  //xbee.print( c );
+  xbee.print( "hello world " );  
   //--- display the character just sent on console ---
   Serial.println( c );
   
@@ -47,7 +47,7 @@ void loop()  {
        c = 'A';
   
   //--- switch LED on Arduino board every character sent---
-  if ( pingPong == 0 )
+  if ( pingPong == 0 ) 
     digitalWrite(13, LOW);
   else
     digitalWrite(13, HIGH);
