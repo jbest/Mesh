@@ -51,23 +51,17 @@ WRITE
 
 ## Arduino setup
 
-Configure XBee as a router AT (see config files)
-Using the Xbee adaptor kit, connect Arduino's GND and +5V to XBee's GND and +5V.
-Connect Arduino pin 2 to XBee TX
-Connect Arduino pin 3 to XBee RX
-Upload router_test to Arduino
+Configure XBee as a router AT (see config files)  
+Using the Xbee adaptor kit, connect Arduino's GND and +5V to XBee's GND and +5V.  
+Connect Arduino pin 2 to XBee TX  
+Connect Arduino pin 3 to XBee RX  
+Upload router_test to Arduino  
 
 ## Desktop and XBee Commander setup
 
-Connect a Windows PC to an XBee using the FTDI cable
-Launch X-CTU and confirm connection to XBee (PC Settins, Test/Query button)
-Monitor Arduino transmissions on Terminal tab in X-CTU
-
-##Communication of Arduino to Pi (next steps)
-
-Install py-serial: sudo apt-get install python-serial  
-
-http://blog.oscarliang.net/connect-raspberry-pi-and-arduino-usb-cable/  
+Connect a Windows PC to an XBee using the FTDI cable  
+Launch X-CTU and confirm connection to XBee (PC Settins, Test/Query button)  
+Monitor Arduino transmissions on Terminal tab in X-CTU  
 
 
 ##TODO
