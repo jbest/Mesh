@@ -57,3 +57,14 @@ http://blog.oscarliang.net/connect-raspberry-pi-and-arduino-usb-cable/
 ##TODO
 
 Add wiring diagram based on http://cs.smith.edu/dftwiki/index.php/Tutorial:_Arduino_and_XBee_Communication
+
+Gather data using RasPi connected to XBee:  
+http://www.desert-home.com/2013/09/raspberry-pi-and-xbee.html 
+http://cae2100.wordpress.com/2012/12/23/raspberry-pi-and-the-serial-port/http://www.raspberrypi.org/phpBB3/viewtopic.php?t=43915&p=413364  
+http://blog.oscarliang.net/connect-raspberry-pi-and-arduino-usb-cable/  
+http://blog.oscarliang.net/raspberry-pi-and-arduino-connected-serial-gpio/  
+http://blog.oscarliang.net/raspberry-pi-arduino-connected-i2c/    
+
+
+
+
