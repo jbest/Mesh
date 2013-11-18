@@ -19,8 +19,7 @@
 #include <SoftwareSerial.h>
 
 SoftwareSerial xbee(2, 3); // RX, TX
-char c = 'A';
-int  pingPong = 1;
+int  txFlash = 1;
 
 void setup()  {
    //Serial.begin(57600);
@@ -30,27 +29,25 @@ void setup()  {
    // set the data rate for the SoftwareSerial port
    //xbee.begin( 19200 );
    xbee.begin( 9600 );
+   xbee.print( "Beginning Tx..." );
 }
 
 void loop()  {
   // send character via XBee to other XBee connected to Mac
   // via USB cable
-  //xbee.print( c );
-  xbee.print( "hello world " );  
+  
+  xbee.print( "Hello world! " );    
   //--- display the character just sent on console ---
-  Serial.println( c );
+  Serial.println( "Tx: Hello world! " );
   
-  //--- get the next letter in the alphabet, and reset to ---
-  //--- 'A' once we have reached 'Z'. 
-  c = c + 1;
-  if ( c>'Z' ) 
-       c = 'A';
   
-  //--- switch LED on Arduino board every character sent---
-  if ( pingPong == 0 ) 
+  //--- switch LED on Arduino board every transmission sent---
+  // For some reason, the LED only seems to flash when the Arduino IDE
+  // Serial monitor window is open.
+  if ( txFlash == 0 ) 
     digitalWrite(13, LOW);
   else
     digitalWrite(13, HIGH);
-  pingPong = 1 - pingPong;
+  txFlash = 1 - txFlash;
   delay( 1000 );
 }
